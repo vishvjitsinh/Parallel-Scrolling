@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallel scrolling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">Jungle</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Destination</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <h2 id="text"><span>It's time for a new</span><br>Explore</h2>
+        <img src="bird1.png" id="bird1" alt="">
+        <img src="bird2.png" id="bird2" alt="">
+        <img src="forest.png" id="forest" alt="">
+        <a href="" id="btn">Start</a>
+                <img src="rocks.png" id="rocks" alt="">
+                <img src="water.png" id="water" alt="">
+
+    </section>
+    <div class="sec">
+        <h2> Paralles scrolling Effect</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quis atque saepe impedit maxime. Officiis ut in enim asperiores sint, atque quos eveniet recusandae. Perspiciatis necessitatibus totam corrupti pariatur laudantium nulla recusandae facilis. Quos officia quidem vel incidunt a quis beatae, unde eveniet in similique repellat ipsum tenetur non, consequuntur iste voluptatibus cum? Doloremque explicabo ratione deleniti tempora architecto reiciendis, cupiditate beatae praesentium, mollitia non eum vitae voluptas a perferendis veniam saepe? Suscipit magnam omnis delectus, aliquam rem vitae nobis dolore qui eum veritatis aspernatur temporibus dicta et fuga eveniet nihil voluptates ad ea quae iure. Labore, debitis similique! Quidem ad ratione deleniti odit libero ullam iure amet repudiandae vitae eveniet tempora expedita doloremque, eligendi tempore minus, nobis laudantium voluptatibus quasi corporis dolorum! Quisquam eveniet recusandae mollitia ipsam officia ipsum quaerat sint laboriosam, excepturi obcaecati dolore ducimus debitis eius, tenetur dolorem molestiae magnam maxime quam fugit est? Exercitationem nemo autem quo mollitia iure velit. Obcaecati magnam impedit voluptatem repellat eaque cupiditate, distinctio aperiam voluptatum dicta voluptatibus! Nostrum vel officiis quos temporibus, pariatur vitae beatae? Quo optio consequuntur deleniti libero dignissimos itaque harum odit adipisci esse ipsum, eos quos! Omnis dolores ipsum non perferendis accusamus soluta dignissimos eveniet laboriosam ex aliquam? <br> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas mollitia reiciendis odio temporibus perferendis aliquid, eius placeat, amet tenetur dolores a, atque ratione? Ex dolore iste maxime eius quam esse quae, repudiandae unde eligendi magni expedita autem. Assumenda ad facilis adipisci natus veniam! Modi atque repellat ut ab dignissimos? Accusantium, laborum? Facere fugiat temporibus harum aliquam aperiam, aspernatur ad, ab velit, consectetur blanditiis eaque. Unde mollitia repellendus est amet eum, incidunt itaque, facere ea tempore officiis error assumenda explicabo culpa maiores! Mollitia cupiditate consectetur ad est perferendis ab eaque voluptatibus provident repellendus in, impedit vitae dolor optio eum magni corrupti sint accusamus. Autem explicabo eos beatae unde mollitia iure, laborum omnis deleniti temporibus blanditiis repudiandae accusamus soluta nemo culpa molestiae facilis itaque nostrum et voluptate praesentium, dolorem dicta at saepe officiis. Suscipit delectus veniam voluptate libero, alias aliquid quisquam ratione sed beatae, aperiam laboriosam expedita explicabo tenetur rem similique. Nisi dolor perspiciatis, odio, a eius rerum quas pariatur quod exercitationem, omnis aperiam? Saepe atque ab ad optio officia facere veniam repellat nihil minus, eaque perferendis nulla quibusdam aliquam incidunt excepturi? Deserunt pariatur laborum assumenda numquam iure temporibus officia, alias ab velit dicta et cum beatae magni dolore maxime fugit expedita! <br> <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem similique repellendus eum reprehenderit doloremque! Reprehenderit, odit quas, libero fugit, quos dignissimos ipsam autem iste laboriosam doloremque in eos culpa deleniti vel consectetur accusamus! Quasi hic inventore placeat. Itaque nisi voluptatibus rerum quis eaque molestias, minus vero esse odit fugit dolores repellat impedit consequuntur iste modi optio debitis cumque iusto laboriosam facilis. Cupiditate assumenda veritatis illo facere, tenetur labore illum ut distinctio, tempora omnis similique asperiores vero dolorem alias dicta debitis eveniet soluta quidem. Tenetur hic corrupti a assumenda! Quia repellat architecto non, error et asperiores maiores debitis iure unde dolorum commodi, ab saepe alias officia iste eveniet voluptas suscipit mollitia. Dolor mollitia officiis at rem veritatis ducimus. Quis minima similique unde quisquam animi nam magnam eaque, nulla voluptas labore ab veniam fugiat recusandae enim, perferendis consequatur excepturi, odit perspiciatis eum mollitia. Pariatur quos dolorem incidunt eligendi odio nisi dolore mollitia ducimus, fugiat recusandae? Iste itaque modi neque voluptas praesentium quidem. Quaerat sed eum fugiat debitis esse repudiandae totam inventore ipsam molestias perferendis quibusdam voluptatem ipsum porro error vel vero, voluptate magni doloremque. Aliquam nam blanditiis ea corrupti distinctio unde, eum nisi animi quia odio quidem mollitia. Aut magni molestias sequi?</p>
+    </div>
+
+    <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn= document.getElementById('btn');
+        let rocks = document.getElementById('rocks');
+        let forest = document.getElementById('forest');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+
+        window.addEventListener('scroll',function(){let value = window.scrollY;
+
+        text.style.top = 50 + value * -0.5 +'%';
+        bird1.style.top = value * -1.5 + 'px';
+        bird1.style.left = value * 2 + 'px';
+        bird2.style.top = value * -1.5 + 'px';
+        bird2.style.left = value * -5 + 'px';
+        btn.style.marginTop= value * 1.5 + 'px';
+        rocks.style.top= value*-0.17 + 'px';
+        })
+        forest.sty.top = value * 0.25 + 'px';
+        header.sty.top = value * 0.5 + 'px';
+    </script>
+</body>
+</html>
